@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans"  
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:schemaLocation="http://www.springframework.org/schema/beans   
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+	
+	
+<!-- 		Setter based
+ -->	<!-- <bean id="vishal"  class="spring.core.model.Employee">
+	<property name="name" value="Vishal Kumar"/>
+	<property name="id" value="909"/>
+	</bean> -->
+<!--    COnstructor based -->   
+	<bean id="vishal"  class="spring.core.model.Employee">
+	<constructor-arg name="name" value="Mukul"/>
+	<constructor-arg name="id" value="101" type="int"/>
+	</bean>
+	
+	
+</beans>
